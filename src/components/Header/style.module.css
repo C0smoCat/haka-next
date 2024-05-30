@@ -1,0 +1,27 @@
+.container {
+    max-width: 1200px;
+    padding: 1em;
+    margin: auto;
+}
+
+.preheaderContainer {
+    margin-top: 2em;
+}
+
+.preheader {
+    padding: 10px;
+    color: #8e8e8e;
+    border: 1px solid #8e8e8e;
+    border-radius: 8px;
+}
+
+.header {
+    font-size: 72px;
+    text-transform: uppercase;
+}
+
+.headerGradient {
+    background: -webkit-linear-gradient(45deg, var(--color-purple), #25a0a5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

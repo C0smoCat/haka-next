@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: "export",
-  distDir: "docs/",
-  basePath: "/haka-next"
+  output: "export"
 };
 
 export default nextConfig;

@@ -8,7 +8,8 @@ import s from "./style.module.css";
 import { Autoplay, Navigation } from "swiper/modules";
 
 import 'swiper/css';
-import Button from "@/components/Button";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const oswald = Oswald({subsets: ["latin"]});
 
@@ -21,16 +22,7 @@ export default function Home() {
             <link rel="icon" href="/favicon.ico"/>
         </Head>
         <main className={ classNames(oswald.className, s.body) }>
-            <div className={ s.container }>
-                <div className={ s.preheaderContainer }>
-                    <span className={ s.preheader }>
-                        Только посмотрите, какие у нас
-                    </span>
-                </div>
-                <h1 className={ s.header }>
-                    Выполненные <span className={ s.headerGradient }>проекты</span>
-                </h1>
-            </div>
+            <Header/>
             <Swiper
                 spaceBetween={ 50 }
                 slidesPerView={ 3 }
@@ -65,27 +57,7 @@ export default function Home() {
                     </SwiperSlide>
                 )) }
             </Swiper>
-            <div className={ classNames(s.container, s.footer) }>
-                <div>
-                    <div className={ classNames(s.footerArrows, s.footer) }>
-                        <div className={ classNames(s.slideBtnContainer, s.slideBtnRotateContainer) }>
-                            <span className={ s.slideBtn }>➜</span>
-                        </div>
-                        <div className={ s.slideBtnContainer }>
-                            <span className={ s.slideBtn }>➜</span>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <Button
-                        rightIcon={
-                            <span className={ s.slideBtn }>➜</span>
-                        }
-                    >
-                        Посмотреть все работы
-                    </Button>
-                </div>
-            </div>
+            <Footer/>
         </main>
     </>);
 }
