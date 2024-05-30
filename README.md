@@ -64,3 +64,30 @@ npm run dev
         "short_description": "Создали интернет-магазин по продаже автомобильных раскладушек и аксессуаров...",
         "url": "{url адрес}"
       }
+
+КОНТАКТЫ
+------------
+
+### Сергей
+
+Телеграмм: https://t.me/Drago0277
+
+GitHub: https://github.com/Serg0277
+
+Стек: Swift, UIKit
+
+### Данил
+
+Телеграмм: https://t.me/danbuch
+
+GitHub: https://github.com/C0smoCat
+
+Стек: JavaScript, TypeScript, NodeJS, SQL, C#
+
+### Владимир
+
+Телеграмм: https://t.me/gekt0r9
+
+GitHub: https://github.com/GEKT0R9
+
+Стек: PHP, SQL, Java, JavaScript, C#
