@@ -35,7 +35,7 @@
     cursor: pointer;
     border-radius: 8px;
     padding: 1em;
-    transform: translateY(0);
+    transform: translateY(0em);
     transition: all 0.3s ease-in-out;
 }
 
@@ -71,6 +71,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.slideBtnRotateContainer {
+    transform: scaleX(-1);
 }
 
 .slideBtn {

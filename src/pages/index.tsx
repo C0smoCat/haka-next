@@ -15,7 +15,7 @@ const oswald = Oswald({subsets: ["latin"]});
 export default function Home() {
     return (<>
         <Head>
-            <title>Create Next App</title>
+            <title>Выполненные проекты</title>
             <meta name="description" content="Портфолио компании"/>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
             <link rel="icon" href="/favicon.ico"/>
@@ -44,8 +44,8 @@ export default function Home() {
                 } }
                 loop
             >
-                { data.map(slide => (
-                    <SwiperSlide className={ s.slide }>
+                { data.map((slide, slideInd) => (
+                    <SwiperSlide key={ slideInd } className={ s.slide }>
                         <div>
                             <img src={ slide.image }/>
                         </div>
@@ -68,7 +68,7 @@ export default function Home() {
             <div className={ classNames(s.container, s.footer) }>
                 <div>
                     <div className={ s.footer }>
-                        <div className={ s.slideBtnContainer }>
+                        <div className={ classNames(s.slideBtnContainer, s.slideBtnRotateContainer) }>
                             <span className={ s.slideBtn }>➜</span>
                         </div>
                         <div className={ s.slideBtnContainer }>

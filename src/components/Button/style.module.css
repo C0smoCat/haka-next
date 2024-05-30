@@ -5,5 +5,12 @@
     background: var(--color-white);
     border-radius: 8px;
     color: #010302;
+    gap: 1em;
     padding: 1em 2em;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(0);
+}
+
+.btn:hover {
+    transform: translateY(-0.5em);
 }
