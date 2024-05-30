@@ -3,7 +3,7 @@ import { Oswald } from "next/font/google";
 import React from "react";
 import classNames from "classnames";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import data from "../../asd.json";
+import data from "../asd.json";
 import s from "./style.module.css";
 import { Autoplay, Navigation } from "swiper/modules";
 
@@ -67,16 +67,13 @@ export default function Home() {
             </Swiper>
             <div className={ classNames(s.container, s.footer) }>
                 <div>
-                    <div className={ s.footer }>
+                    <div className={ classNames(s.footerArrows, s.footer) }>
                         <div className={ classNames(s.slideBtnContainer, s.slideBtnRotateContainer) }>
                             <span className={ s.slideBtn }>➜</span>
                         </div>
                         <div className={ s.slideBtnContainer }>
                             <span className={ s.slideBtn }>➜</span>
                         </div>
-                    </div>
-                    <div>
-                        01 --- 15
                     </div>
                 </div>
                 <div>
