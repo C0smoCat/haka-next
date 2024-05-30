@@ -1,3 +1,9 @@
+.container {
+    max-width: 1200px;
+    padding: 1em;
+    margin: auto;
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -6,4 +12,21 @@
 
 .footerArrows {
     gap: 1em;
+}
+
+.slideBtnRotateContainer {
+    transform: scaleX(-1);
+}
+
+.slideBtn {
+    border-radius: 100px;
+    font-size: 25px;
+    box-shadow: 2px 2px 2px #0006;
+    border: 1px solid var(--color-purple);
+    padding: 10px 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.slide:hover .slideBtn {
+    background: var(--color-purple);
 }
